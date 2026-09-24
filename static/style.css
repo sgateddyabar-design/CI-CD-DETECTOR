@@ -1,0 +1,89 @@
+/* Background styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.container {
+    width: 50%;
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+/* Text area */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 15px;
+    resize: none;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+textarea:focus {
+    border-color: #1e3c72;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(30, 60, 114, 0.3);
+}
+
+/* Example text */
+.example-text {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #1e3c72;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    background: #16325c;
+}
+
+/* Result box */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Success (Normal) */
+.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+/* Error (Anomaly) */
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
