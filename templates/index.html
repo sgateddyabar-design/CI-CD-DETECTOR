@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CI/CD Anomaly Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 CI/CD Pipeline Anomaly Detector</h1>
+
+    <form method="POST">
+
+        <!-- TEXT AREA -->
+        <textarea 
+            name="log" 
+            placeholder="Paste your CI/CD logs here...">{{ log }}</textarea>
+
+        <!-- EXAMPLE TEXT -->
+        <p class="example-text">
+            Example: echo build OR curl http://malicious.com
+        </p>
+
+        <!-- BUTTON -->
+        <button type="submit">Analyze Logs</button>
+
+    </form>
+
+    <!-- RESULT DISPLAY -->
+    {% if result %}
+        <div class="result 
+            {% if 'Anomaly' in result %}error{% else %}success{% endif %}">
+            {{ result }}
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
